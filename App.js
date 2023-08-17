@@ -17,6 +17,7 @@ export default function App() {
             resizeMode="contain"
       />
       </View>
+      <View style={styles.backBloc}>
 
       <Text style={styles.title}> Interstellar</Text>
       <Text style={styles.info}> 2014 PG-13 2h49min Adventure, Drama, Sci-Fi</Text>
@@ -49,6 +50,9 @@ export default function App() {
           <Text style={styles.rateNumber}>46 critic reviewq</Text>
         </View>
       </View>
+      </View>
+
+<View style={styles.backBloc}>
 
       <View style={styles.picsTop}>
         <Text style={styles.picsTitle}>TopBilled Cast</Text>
@@ -99,6 +103,7 @@ export default function App() {
         <Text style={styles.stafName}>Christopher Nolan & Jonathan Nolan</Text>
       </View>
 
+      </View>
 
       <StatusBar style="light" />
     </View>
@@ -109,20 +114,39 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "black",
+    backgroundColor: "#191919",
     paddingStart:10,
     paddingEnd:10,
-  },
-  topArea:{
-    flex:1,
-    backgroundColor:"black",
     paddingTop: Constants.statusBarHeight,
   },
+  backBloc:{
+backgroundColor:"#212121",
+padding:10,
+marginBottom:20,
+shadowColor: 'black',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 10
+
+  },
+
+  topArea:{
+    flex:1,
+    backgroundColor:"#1D1D1D",
+  },
   logoBloc:{
-    backgroundColor:"grey",
+    zIndex:10,
+    backgroundColor:"#393939",
     width:"100%",
-    height:40,
-    justifyContent:"center"
+    height:60,
+    justifyContent:"center",
+    marginBottom:10,
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 20
   },
   logo: {
     height: 30,

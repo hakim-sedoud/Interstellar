@@ -7,7 +7,7 @@ import Constants from 'expo-constants';
 export default function App() {
   return (
     <ScrollView style={styles.topArea}>
-    <SafeAreaView>
+    {/* <SafeAreaView> */}
     <View style={styles.container}
     >
       <View style={styles.logoBloc}> 
@@ -101,7 +101,7 @@ export default function App() {
 
       <StatusBar style="auto" />
     </View>
-    </SafeAreaView>
+    {/* </SafeAreaView> */}
     </ScrollView>
   );
 }
@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
     paddingEnd:10,
   },
   topArea:{
+    flex:1,
     paddingTop: Constants.statusBarHeight,
     height:"100%"
   },
